@@ -1,6 +1,6 @@
 # Python Avocado Prices Graph
 
-<p align="center>
+<p align="center">
     <img src="image0.png" width="1030"/>
 </p>
 
