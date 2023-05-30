@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
+import mplcursors
 
 # turns off the warning for chained assignment
 pd.set_option('mode.chained_assignment', None)
@@ -47,5 +48,11 @@ graph_complete = graph_df.dropna().plot(figsize=(20,12), legend=True)
 graph_complete.set_title('Avocado Average Region Prices', size=30, fontfamily='Arial')
 # set the x-axis label of the graph to anchor outside of the graph, on the right side with 1 column and a font size of 7
 graph_complete.legend(labels=limited_legend_labels, loc='center left', bbox_to_anchor=(1.0, 0.5), ncol=1, prop={'family': 'Arial', 'size': 7})
+
+# create the mplcursors cursor object for the plot
+cursors = mplcursors.cursor(graph_complete)
+# set the hover annotation format
+cursors.add_highlight('{label}') 
+
 # show the graph
 plt.show()
