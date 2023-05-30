@@ -1,5 +1,10 @@
 # Python Avocado Prices Graph
-This program is to test Pandas, with simple graphing. 
+
+<p align="center>
+    <img src="image0.png" width="1030"/>
+</p>
+
+This program is to test Pandas, with simple graphing of avocado prices based on region and rolling mean.
 
 # Contribution 
 
